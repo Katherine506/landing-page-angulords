@@ -1,1 +1,195 @@
-<h1>hola</h1>
+<div class="container-fluid bg-dark text-white">
+  <!-- Header -->
+  <header class="d-flex justify-content-between align-items-center p-3">
+    <img
+      src="../assets/img/angulords/a.png"
+      alt="Logo"
+      class="logo"
+      width="150"
+    />
+    <nav style="font-size: 20px">
+      <a href="#" class="text-white mx-3">Proyectos</a>
+      <a href="#" class="text-white mx-3">Nosotros</a>
+      <a href="#" class="text-white mx-3">Contacto</a>
+    </nav>
+  </header>
+  <!-- Hero Section -->
+  <section id="angulords" class="text-center py-5">
+    <h1 class="display-3">ANGULORDS</h1>
+    <p class="lead">Forjando el futuro, un byte a la vez.</p>
+    <button
+      id="contactanos"
+      class="btn btn-success btn-lg"
+      onclick="document.getElementById('escribenos').scrollIntoView({ behavior: 'smooth' });"
+    >
+      CONTÁCTANOS
+    </button>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="container my-5">
+    <h2 class="text-center mb-4">NUESTROS PROYECTOS</h2>
+    <p class="text-center text-muted">
+      Estos son algunos de los proyectos seleccionados que muestran nuestra
+      pasión por el Desarrollo de Software Full Stack.
+    </p>
+    <div class="row align-items-center">
+      <div class="col-md-6 text-center">
+        <img
+          src="../assets/img/angulords/ru.JPG"
+          class="img-fluid rounded shadow"
+          alt="Project"
+        />
+      </div>
+      <div class="col-md-6">
+        <h3>Ecommerce para compra, venta y subasta de animales de granja.</h3>
+        <p>
+          Proyecto realizado para la comercialización y subasta de animales de
+          granja en Costa Rica. Desarrollado con tecnologías como: Angular,
+          Spring, NodeJS, y MariaDB.
+        </p>
+        <a href="#" class="btn btn-outline-success me-2">LIVE DEMO</a>
+        <a href="#" class="btn btn-outline-light">GITHUB</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <div class="d-flex align-items-center">
+    <div class="card text-center" style="width: 18rem">
+      <img
+        src="../assets/img/angulords/k.JPG"
+        class="card-img-top rounded-circle mx-auto mt-3"
+        alt="Foto"
+        style="width: 100px; height: 100px; object-fit: cover"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Katherine González</h5>
+        <p class="card-text">Coordinadora General</p>
+        <a href="mailto:vgonzaleza@ucenfotec.ac.cr" class="btn btn-primary"
+          >Enviar Email</a
+        >
+      </div>
+    </div>
+    <div class="card text-center" style="width: 18rem">
+      <img
+        src="../assets/img/angulords/an.jpeg"
+        class="card-img-top rounded-circle mx-auto mt-3"
+        alt="Foto"
+        style="width: 100px; height: 100px; object-fit: cover"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Andrés Torres</h5>
+        <p class="card-text">Coordinador Desarrollo</p>
+        <a href="mailto:atorress@ucenfotec.ac.cr" class="btn btn-primary"
+          >Enviar Email</a
+        >
+      </div>
+    </div>
+    <div class="card text-center" style="width: 18rem">
+      <img
+        src="../assets/img/angulords/c.jpeg"
+        class="card-img-top rounded-circle mx-auto mt-3"
+        alt="Foto"
+        style="width: 100px; height: 100px; object-fit: cover"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Carolina Ortiz</h5>
+        <p class="card-text">Coordinadora Desarrollo</p>
+        <a href="mailto:cortizr@ucenfotec.ac.cr" class="btn btn-primary"
+          >Enviar Email</a
+        >
+      </div>
+    </div>
+    <div class="card text-center" style="width: 18rem">
+      <img
+        src="../assets/img/angulords/r.jpeg"
+        class="card-img-top rounded-circle mx-auto mt-3"
+        alt="Foto"
+        style="width: 100px; height: 100px; object-fit: cover"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Ronald Picado</h5>
+        <p class="card-text">Coordinador Calidad</p>
+        <a href="mailto:rpicadoh@ucenfotec.ac.cr" class="btn btn-primary"
+          >Enviar Email</a
+        >
+      </div>
+    </div>
+    <div class="card text-center" style="width: 18rem">
+      <img
+        src="../assets/img/angulords/s.jpeg"
+        class="card-img-top rounded-circle mx-auto mt-3"
+        alt="Foto"
+        style="width: 100px; height: 100px; object-fit: cover"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Saúl López</h5>
+        <p class="card-text">Coordinador Soporte</p>
+        <a href="mailto:slopezm@ucenfotec.ac.cr" class="btn btn-primary"
+          >Enviar Email</a
+        >
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Form Section -->
+  <section id="escribenos" class="container my-5">
+    <h2 class="text-center">ESCRÍBENOS</h2>
+    <p class="text-center text-muted">
+      Si te interesa contactarnos, no dudes en ponerte en contacto.
+    </p>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form>
+          <!-- (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm"-->
+          <div class="mb-3">
+            <label for="name" class="form-label">Nombre</label>
+            <input
+              type="text"
+              id="name"
+              class="form-control"
+              required
+              ngModel
+              name="name"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="email"
+              id="email"
+              class="form-control"
+              required
+              ngModel
+              name="email"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="subject" class="form-label">Tema</label>
+            <input
+              type="text"
+              id="subject"
+              class="form-control"
+              required
+              ngModel
+              name="subject"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Mensaje</label>
+            <textarea
+              id="message"
+              class="form-control"
+              rows="4"
+              required
+              ngModel
+              name="message"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-success w-100">ENVIAR</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</div>
