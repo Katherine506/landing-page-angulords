@@ -1,0 +1,207 @@
+// Variables de colores
+$primary-color: #007bff;
+$secondary-color: #1e1e1e;
+$third-color: #1a1a1a;
+$text-white: #ffffff;
+$text-muted: #6c757d;
+$card-radius: 15px;
+$cool-color: #d3e97a;
+// Estilo global del body
+body {
+  background-color: secondary-color;
+  color: $text-white;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+// Header
+header {
+  //padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: $secondary-color;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 40px 0px 20px;
+  .logo {
+    width: 150px;
+  }
+  nav {
+    a {
+      color: $text-white;
+      text-decoration: none;
+      transition: color 0.3s;
+      &:hover {
+        color: $cool-color;
+      }
+    }
+  }
+}
+
+// Hero Section
+section {
+  text-align: center;
+  padding: 3rem 0;
+  h1 {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+  p.lead {
+    font-size: 1.45rem;
+    font-weight: 400;
+    // margin-bottom: 2rem;
+  }
+  button {
+    padding: 0.75rem 2rem;
+    font-size: 1.25rem;
+  }
+}
+
+#proyectos {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-top: 16.5%;
+}
+
+#img-proyecto {
+  padding: 10%;
+  background-color: $third-color;
+  height: 400px;
+}
+
+#contactanos {
+  background-color: $cool-color;
+  border: none;
+  border-radius: 30px;
+  color: $third-color;
+  &:hover {
+    background-color: $text-muted;
+  }
+}
+
+.lead {
+  margin-top: 2%;
+}
+
+// Projects Section
+.container {
+  padding-left: 5%;
+  h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  p {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: $text-muted;
+  }
+  .row {
+    margin-bottom: 2rem;
+    img {
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    h3 {
+      font-size: 1.5rem;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    a {
+      margin-right: 10px;
+    }
+  }
+}
+
+// Cards de equipo
+.card {
+  background-color: #d9d9d9;
+  border: none;
+  border-radius: $card-radius;
+  //margin: 1rem;
+  width: 18rem;
+  .card-img-top {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-top: 1rem;
+  }
+  .card-body {
+    text-align: center;
+    h5 {
+      margin-bottom: 0.5rem;
+    }
+    p {
+      margin-bottom: 1rem;
+    }
+    a {
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+  .card-title {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+
+#escribenos {
+  margin-top: 5%;
+  display: flex;
+  align-items: start;
+}
+
+// Contenedor de tarjetas en línea
+.d-flex {
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+// Formulario de contacto
+form {
+  width: 500px;
+  padding-left: 100px;
+  border-radius: $card-radius;
+  text-align: justify;
+  .form-label {
+    font-weight: bold;
+    color: $text-white;
+  }
+  input,
+  textarea {
+    background-color: $third-color;
+    border: none;
+    color: $text-white;
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px $cool-color;
+    }
+  }
+  button {
+    margin-top: 1rem;
+    width: 150px;
+    background-color: $cool-color;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    color: $third-color;
+    padding: 0.75rem;
+    &:hover {
+      background-color: $text-muted;
+    }
+  }
+}
+
+span {
+  font-weight: bolder;
+}
