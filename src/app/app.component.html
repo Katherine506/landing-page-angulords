@@ -1,8 +1,8 @@
 <div style="background-color: #1e1e1e">
   <div class="container-fluid">
     <!-- Header -->
-    <section id="line">
-      <header class="d-flex justify-content-between align-items-center p-3">
+    <section>
+      <header>
         <img
           src="../assets/img/angulords/a.png"
           alt="Logo"
@@ -11,13 +11,13 @@
         />
         <nav style="font-size: 20px">
           <a
-            onclick="document.getElementById('escribenos').scrollIntoView({ behavior: 'smooth' });"
+            onclick="document.getElementById('proyectos1').scrollIntoView({ behavior: 'smooth' });"
             class="text-white mx-3"
             class="text-white mx-3"
             >Proyectos</a
           >
           <a
-            onclick="document.getElementById('escribenos').scrollIntoView({ behavior: 'smooth' });"
+            onclick="document.getElementById('nosotros').scrollIntoView({ behavior: 'smooth' });"
             class="text-white mx-3"
             class="text-white mx-3"
             >Nosotros</a
@@ -31,7 +31,9 @@
       </header>
     </section>
     <!-- Hero Section -->
-    <section class="my-5" style="height: 250px; background-color: #1a1a1a">
+    <section
+      style="margin-top: 180px; height: 250px; background-color: #1a1a1a"
+    >
       <div class="container-fluid h-100">
         <div
           class="container d-flex flex-column justify-content-center align-items-start"
@@ -43,16 +45,16 @@
             class="btn btn-success btn-lg"
             onclick="document.getElementById('escribenos').scrollIntoView({ behavior: 'smooth' });"
           >
-            CONTÁCTANOS <span> ·</span>
+            CONTÁCTANOS <span>·</span>
           </button>
         </div>
       </div>
     </section>
 
     <!-- Projects Section -->
-    <section class="container">
+    <section class="container" id="proyectos1">
       <div id="proyectos">
-        <h2 class="my-5 text-white">NUESTROS PROYECTOS</h2>
+        <h2 class="text-white">NUESTROS PROYECTOS</h2>
         <p
           class="text-white"
           style="
@@ -114,7 +116,7 @@
     </section>
 
     <!-- About Us Section -->
-    <section class="container">
+    <section class="container" id="nosotros">
       <h2 class="mt-5 text-white d-flex justify-content-start">
         SOBRE NOSOTROS
       </h2>
@@ -216,17 +218,14 @@
     </section>
 
     <!-- Contact Form Section -->
-    <section
-      id="escribenos"
-      class="container my-5 d-flex align-items-center justify-content-start"
-    >
+    <section id="escribenos" class="container my-4">
       <div>
-        <h2 class="text-center">ESCRÍBENOS</h2>
-        <p class="text-center text-muted">
+        <h2 style="text-align: justify" class="text-white">ESCRÍBENOS</h2>
+        <p style="text-align: justify; width: 250px" class="text-white">
           Si te interesa contactarnos, no dudes en ponerte en contacto.
         </p>
       </div>
-      <div class="row justify-content-center">
+      <div class="row justify-content-end">
         <div class="col-md-6">
           <form>
             <!-- (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm"-->
@@ -274,7 +273,7 @@
                 name="message"
               ></textarea>
             </div>
-            <button type="submit" class="btn btn-success w-100">ENVIAR</button>
+            <button type="submit" class="btn btn-success">ENVIAR</button>
           </form>
         </div>
       </div>

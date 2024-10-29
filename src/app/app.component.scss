@@ -18,6 +18,17 @@ body {
 // Header
 header {
   //padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: $secondary-color;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 40px 0px 20px;
   .logo {
     width: 150px;
   }
@@ -25,10 +36,9 @@ header {
     a {
       color: $text-white;
       text-decoration: none;
-      margin: 0 15px;
       transition: color 0.3s;
       &:hover {
-        color: $cool-color; // Cambia el color al pasar el cursor.
+        color: $cool-color;
       }
     }
   }
@@ -53,21 +63,17 @@ section {
   }
 }
 
-#line {
-  padding-right: 5%;
-  padding: 0;
-}
-
 #proyectos {
   display: flex;
   flex-direction: column;
   align-items: start;
-  margin-top: 10%;
+  margin-top: 16.5%;
 }
 
 #img-proyecto {
   padding: 10%;
   background-color: $third-color;
+  height: 400px;
 }
 
 #contactanos {
@@ -75,6 +81,9 @@ section {
   border: none;
   border-radius: 30px;
   color: $third-color;
+  &:hover {
+    background-color: $text-muted;
+  }
 }
 
 .lead {
@@ -148,6 +157,8 @@ section {
 
 #escribenos {
   margin-top: 5%;
+  display: flex;
+  align-items: start;
 }
 
 // Contenedor de tarjetas en línea
@@ -158,15 +169,17 @@ section {
 
 // Formulario de contacto
 form {
-  background-color: #343a40;
-  padding: 2rem;
+  width: 500px;
+  padding-left: 100px;
   border-radius: $card-radius;
+  text-align: justify;
   .form-label {
     font-weight: bold;
+    color: $text-white;
   }
   input,
   textarea {
-    background-color: #495057;
+    background-color: $third-color;
     border: none;
     color: $text-white;
     &:focus {
@@ -176,10 +189,19 @@ form {
   }
   button {
     margin-top: 1rem;
+    width: 150px;
     background-color: $cool-color;
     border: none;
-    border-radius: 10px;
+    border-radius: 30px;
     font-size: 1.1rem;
+    color: $third-color;
     padding: 0.75rem;
+    &:hover {
+      background-color: $text-muted;
+    }
   }
+}
+
+span {
+  font-weight: bolder;
 }
