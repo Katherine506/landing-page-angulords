@@ -1,55 +1,55 @@
 {
-  "hash": "be9aef6c",
-  "configHash": "8ecd4521",
+  "hash": "71c2aec0",
+  "configHash": "f43b0b31",
   "lockfileHash": "bc5ebe4a",
-  "browserHash": "6d261711",
+  "browserHash": "5f2f7671",
   "optimized": {
     "@angular/common": {
       "src": "../../../../../node_modules/@angular/common/fesm2022/common.mjs",
       "file": "@angular_common.js",
-      "fileHash": "6e503728",
+      "fileHash": "022a102c",
       "needsInterop": false
     },
     "@angular/common/http": {
       "src": "../../../../../node_modules/@angular/common/fesm2022/http.mjs",
       "file": "@angular_common_http.js",
-      "fileHash": "6d7bb28d",
+      "fileHash": "ae24face",
       "needsInterop": false
     },
     "@angular/core": {
       "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
-      "fileHash": "fdf605f9",
+      "fileHash": "c927b7cc",
       "needsInterop": false
     },
     "@angular/forms": {
       "src": "../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
       "file": "@angular_forms.js",
-      "fileHash": "ce777e18",
+      "fileHash": "529b74d1",
       "needsInterop": false
     },
     "@angular/platform-browser": {
       "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
       "file": "@angular_platform-browser.js",
-      "fileHash": "a58fd3d9",
+      "fileHash": "127ed6bf",
       "needsInterop": false
     },
     "@angular/platform-browser/animations/async": {
       "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/animations/async.mjs",
       "file": "@angular_platform-browser_animations_async.js",
-      "fileHash": "8423d6a0",
+      "fileHash": "5542c875",
       "needsInterop": false
     },
     "@angular/router": {
       "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
       "file": "@angular_router.js",
-      "fileHash": "8660a3d5",
+      "fileHash": "c654d89f",
       "needsInterop": false
     },
     "emailjs-com": {
       "src": "../../../../../node_modules/emailjs-com/es/index.js",
       "file": "emailjs-com.js",
-      "fileHash": "d686d3a7",
+      "fileHash": "2c2fce8c",
       "needsInterop": false
     }
   },

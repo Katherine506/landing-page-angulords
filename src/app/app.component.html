@@ -11,25 +11,27 @@
         />
         <nav style="font-size: 20px">
           <a
-            onclick="document.getElementById('proyectos1').scrollIntoView({ behavior: 'smooth' });"
-            class="text-white mx-3"
-            class="text-white mx-3"
+            href="#"
+            onclick="document.getElementById('proyectos1').scrollIntoView({ behavior: 'smooth' }); return false;"
+            class="mx-3"
             >Proyectos</a
           >
           <a
-            onclick="document.getElementById('nosotros').scrollIntoView({ behavior: 'smooth' });"
-            class="text-white mx-3"
-            class="text-white mx-3"
+            href="#"
+            onclick="document.getElementById('nosotros').scrollIntoView({ behavior: 'smooth' }); return false;"
+            class="mx-3"
             >Nosotros</a
           >
           <a
-            onclick="document.getElementById('escribenos').scrollIntoView({ behavior: 'smooth' });"
-            class="text-white mx-3"
+            href="#"
+            onclick="document.getElementById('escribenos').scrollIntoView({ behavior: 'smooth' }); return false;"
+            class="mx-3"
             >Contacto</a
           >
         </nav>
       </header>
     </section>
+
     <!-- Hero Section -->
     <section
       style="margin-top: 180px; height: 250px; background-color: #1a1a1a"
@@ -45,7 +47,13 @@
             class="btn btn-success btn-lg"
             onclick="document.getElementById('escribenos').scrollIntoView({ behavior: 'smooth' });"
           >
-            CONTÁCTANOS <span>·</span>
+            CONTÁCTANOS
+            <span
+              ><i
+                class="fa-solid fa-circle fa-2xs"
+                style="color: #000000; margin-left: 15px"
+              ></i
+            ></span>
           </button>
         </div>
       </div>
@@ -105,11 +113,29 @@
           </p>
           <div class="d-flex justify-content-start">
             <a
-              href="http://localhost:4200/ladingpage"
-              class="btn btn-outline-success me-2"
-              >LIVE DEMO</a
-            >
-            <a href="#" class="btn btn-outline-light">GITHUB</a>
+              href="#"
+              class="btn btn-outline"
+              id="btnProyectos"
+              target="_blank"
+              >LIVE DEMO
+              <span
+                ><i
+                  class="fa-solid fa-arrow-up fa-md"
+                  style="color: #d3e97a; transform: rotate(45deg)"
+                ></i></span
+            ></a>
+            <a
+              href="https://github.com/Katherine506/landing-page-angulords"
+              class="btn btn-outline"
+              id="btnProyectos"
+              target="_blank"
+              >GITHUB
+              <span
+                ><i
+                  class="fa-brands fa-github fa-md"
+                  style="color: #d3e97a"
+                ></i></span
+            ></a>
           </div>
         </div>
       </div>
@@ -135,9 +161,11 @@
             <h5 class="card-title">Katherine González</h5>
             <p class="card-text">Coordinadora General</p>
             <a
-              href="mailto:vgonzaleza@ucenfotec.ac.cr"
+              href="https://www.linkedin.com/in/katherine-g-960ab6188/"
               class="btn btn-dark"
               style="font-size: 12px; font-weight: 500"
+              target="_blank"
+              id="contactame"
               >Contáctame</a
             >
           </div>
@@ -153,9 +181,11 @@
             <h5 class="card-title">Andrés Torres</h5>
             <p class="card-text">Coordinador Desarrollo</p>
             <a
-              href="mailto:atorress@ucenfotec.ac.cr"
+              href="https://www.linkedin.com/in/andreshts/"
               class="btn btn-dark"
               style="font-size: 12px; font-weight: 500"
+              target="_blank"
+              id="contactame"
               >Contáctame</a
             >
           </div>
@@ -171,9 +201,11 @@
             <h5 class="card-title">Carolina Ortiz</h5>
             <p class="card-text">Coordinadora Desarrollo</p>
             <a
-              href="mailto:cortizr@ucenfotec.ac.cr"
+              href="https://www.linkedin.com/in/carolina-ortiz-43463319a/"
               class="btn btn-dark"
               style="font-size: 12px; font-weight: 500"
+              target="_blank"
+              id="contactame"
               >Contáctame</a
             >
           </div>
@@ -189,9 +221,11 @@
             <h5 class="card-title">Ronald Picado</h5>
             <p class="card-text">Coordinador Calidad</p>
             <a
-              href="mailto:rpicadoh@ucenfotec.ac.cr"
+              href="https://www.linkedin.com/in/ronald-picado-hernandez-772531160"
               class="btn btn-dark"
               style="font-size: 12px; font-weight: 500"
+              target="_blank"
+              id="contactame"
               >Contáctame</a
             >
           </div>
@@ -207,9 +241,11 @@
             <h5 class="card-title">Saúl López</h5>
             <p class="card-text">Coordinador Soporte</p>
             <a
-              href="mailto:slopezm@ucenfotec.ac.cr"
+              href="https://www.linkedin.com/in/saul-lopez-715536165/"
               class="btn btn-dark"
               style="font-size: 12px; font-weight: 500"
+              target="_blank"
+              id="contactame"
               >Contáctame</a
             >
           </div>
@@ -227,7 +263,7 @@
       </div>
       <div class="row justify-content-end">
         <div class="col-md-6">
-          <form  (ngSubmit)="sendMessage(contactForm)" #contactForm="ngForm">
+          <form (ngSubmit)="sendMessage(contactForm)" #contactForm="ngForm">
             <div class="mb-3">
               <label for="name" class="form-label">Nombre</label>
               <input
@@ -239,6 +275,11 @@
                 name="name"
                 #name="ngModel"
               />
+              <div *ngIf="name.invalid && name.touched" class="text-danger">
+                <small *ngIf="name.errors?.['required']"
+                  >El nombre es obligatorio.</small
+                >
+              </div>
             </div>
             <div class="mb-3">
               <label for="email" class="form-label">Email</label>
@@ -249,8 +290,17 @@
                 required
                 [(ngModel)]="formData.email"
                 name="email"
+                pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$"
                 #email="ngModel"
               />
+              <div *ngIf="email.invalid && email.touched" class="text-danger">
+                <small *ngIf="email.errors?.['required']"
+                  >El correo es obligatorio.</small
+                >
+                <small *ngIf="email.errors?.['pattern']"
+                  >Debe ser un correo válido con arroba y dominio.</small
+                >
+              </div>
             </div>
             <div class="mb-3">
               <label for="subject" class="form-label">Tema</label>
@@ -263,6 +313,14 @@
                 name="subject"
                 #subject="ngModel"
               />
+              <div
+                *ngIf="subject.invalid && subject.touched"
+                class="text-danger"
+              >
+                <small *ngIf="subject.errors?.['required']"
+                  >El tema es obligatorio.</small
+                >
+              </div>
             </div>
             <div class="mb-3">
               <label for="message" class="form-label">Mensaje</label>
@@ -275,8 +333,22 @@
                 name="message"
                 #message="ngModel"
               ></textarea>
+              <div
+                *ngIf="message.invalid && message.touched"
+                class="text-danger"
+              >
+                <small *ngIf="message.errors?.['required']"
+                  >El mensaje es obligatorio.</small
+                >
+              </div>
             </div>
-            <button type="submit" [disabled]="contactForm.form.invalid" class="btn btn-success">ENVIAR</button>
+            <button
+              type="submit"
+              [disabled]="contactForm.form.invalid"
+              class="btn btn-success"
+            >
+              ENVIAR
+            </button>
           </form>
         </div>
       </div>
