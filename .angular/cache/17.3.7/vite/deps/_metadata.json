@@ -1,61 +1,76 @@
 {
-  "hash": "f44d18e2",
-  "configHash": "7adbcb92",
-  "lockfileHash": "757fdf2b",
-  "browserHash": "ff52accb",
+  "hash": "be9aef6c",
+  "configHash": "8ecd4521",
+  "lockfileHash": "bc5ebe4a",
+  "browserHash": "6d261711",
   "optimized": {
     "@angular/common": {
       "src": "../../../../../node_modules/@angular/common/fesm2022/common.mjs",
       "file": "@angular_common.js",
-      "fileHash": "87043bcd",
+      "fileHash": "6e503728",
       "needsInterop": false
     },
     "@angular/common/http": {
       "src": "../../../../../node_modules/@angular/common/fesm2022/http.mjs",
       "file": "@angular_common_http.js",
-      "fileHash": "f7116348",
+      "fileHash": "6d7bb28d",
       "needsInterop": false
     },
     "@angular/core": {
       "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
-      "fileHash": "eb4fffe1",
+      "fileHash": "fdf605f9",
+      "needsInterop": false
+    },
+    "@angular/forms": {
+      "src": "../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
+      "file": "@angular_forms.js",
+      "fileHash": "ce777e18",
       "needsInterop": false
     },
     "@angular/platform-browser": {
       "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
       "file": "@angular_platform-browser.js",
-      "fileHash": "6c31608a",
+      "fileHash": "a58fd3d9",
       "needsInterop": false
     },
     "@angular/platform-browser/animations/async": {
       "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/animations/async.mjs",
       "file": "@angular_platform-browser_animations_async.js",
-      "fileHash": "895104b2",
+      "fileHash": "8423d6a0",
       "needsInterop": false
     },
     "@angular/router": {
       "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
       "file": "@angular_router.js",
-      "fileHash": "26939917",
+      "fileHash": "8660a3d5",
+      "needsInterop": false
+    },
+    "emailjs-com": {
+      "src": "../../../../../node_modules/emailjs-com/es/index.js",
+      "file": "emailjs-com.js",
+      "fileHash": "d686d3a7",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-EQFSPI4F": {
-      "file": "chunk-EQFSPI4F.js"
+    "browser-C2WDE4HF": {
+      "file": "browser-C2WDE4HF.js"
     },
-    "chunk-NL3X5DL4": {
-      "file": "chunk-NL3X5DL4.js"
+    "chunk-AG57XECP": {
+      "file": "chunk-AG57XECP.js"
     },
-    "browser-GIKOA2GE": {
-      "file": "browser-GIKOA2GE.js"
+    "chunk-STBQGWKR": {
+      "file": "chunk-STBQGWKR.js"
     },
-    "chunk-ZQMYJ2Z5": {
-      "file": "chunk-ZQMYJ2Z5.js"
+    "chunk-HXPVR4DB": {
+      "file": "chunk-HXPVR4DB.js"
     },
-    "chunk-VOJBHTPI": {
-      "file": "chunk-VOJBHTPI.js"
+    "chunk-2EPJZXRW": {
+      "file": "chunk-2EPJZXRW.js"
+    },
+    "chunk-J4B6MK7R": {
+      "file": "chunk-J4B6MK7R.js"
     }
   }
 }

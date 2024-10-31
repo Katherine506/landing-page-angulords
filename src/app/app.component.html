@@ -227,8 +227,7 @@
       </div>
       <div class="row justify-content-end">
         <div class="col-md-6">
-          <form>
-            <!-- (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm"-->
+          <form  (ngSubmit)="sendMessage(contactForm)" #contactForm="ngForm">
             <div class="mb-3">
               <label for="name" class="form-label">Nombre</label>
               <input
@@ -236,8 +235,9 @@
                 id="name"
                 class="form-control"
                 required
-                ngModel
+                [(ngModel)]="formData.name"
                 name="name"
+                #name="ngModel"
               />
             </div>
             <div class="mb-3">
@@ -247,8 +247,9 @@
                 id="email"
                 class="form-control"
                 required
-                ngModel
+                [(ngModel)]="formData.email"
                 name="email"
+                #email="ngModel"
               />
             </div>
             <div class="mb-3">
@@ -258,8 +259,9 @@
                 id="subject"
                 class="form-control"
                 required
-                ngModel
+                [(ngModel)]="formData.subject"
                 name="subject"
+                #subject="ngModel"
               />
             </div>
             <div class="mb-3">
@@ -269,11 +271,12 @@
                 class="form-control"
                 rows="4"
                 required
-                ngModel
+                [(ngModel)]="formData.message"
                 name="message"
+                #message="ngModel"
               ></textarea>
             </div>
-            <button type="submit" class="btn btn-success">ENVIAR</button>
+            <button type="submit" [disabled]="contactForm.form.invalid" class="btn btn-success">ENVIAR</button>
           </form>
         </div>
       </div>
