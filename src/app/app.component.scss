@@ -37,8 +37,12 @@ header {
       color: $text-white;
       text-decoration: none;
       transition: color 0.3s;
+      padding: 8px;
+      border-radius: 5%;
       &:hover {
         color: $cool-color;
+        background-color: $text-muted;
+        text-decoration: underline;
       }
     }
   }
@@ -187,7 +191,8 @@ form {
       box-shadow: 0 0 0 2px $cool-color;
     }
   }
-  button {
+  button,
+  #enviar {
     margin-top: 1rem;
     width: 150px;
     background-color: $cool-color;
@@ -198,10 +203,27 @@ form {
     padding: 0.75rem;
     &:hover {
       background-color: $text-muted;
+      color: $text-white;
     }
   }
 }
 
 span {
   font-weight: bolder;
+}
+
+#btnProyectos {
+  color: #d3e97a;
+  &:hover {
+    background-color: $text-muted;
+    text-decoration: underline;
+  }
+}
+
+#contactame {
+  &:hover {
+    background-color: $cool-color;
+    color: $secondary-color;
+    border-color: $cool-color;
+  }
 }
