@@ -128,3 +128,9 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+/.angular/cache
+/.angular
+.angular/cache/17.3.7/vite/deps/package.json
+.angular/cache/17.3.7/vite/deps/chunk-ZQMYJ2Z5.js.map
+.angular/cache/17.3.7/vite/deps/@angular_common_http.js.map
+.angular/cache/17.3.7/vite/deps/@angular_common_http.js
